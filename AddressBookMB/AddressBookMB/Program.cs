@@ -1,12 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AddressBookMB
 {
-    class Program
+    public class Program
     {
+        public static Dictionary<string, List<Contacts>> addressBookStore = new Dictionary<string, List<Contacts>>();
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Address Book");
+            String bookName = Console.ReadLine();
+            AddressBookMain.addBook(bookName);
+
         }
     }
 }
