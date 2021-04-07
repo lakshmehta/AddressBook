@@ -11,7 +11,7 @@ namespace AddressBookMB
             Contacts pr = new Contacts();
 
             Console.WriteLine("Enter All Details Like: ");
-            Console.WriteLine("Enter First_Name: ");
+            Console.WriteLine("Enter First Name: ");
             pr.firstName = Console.ReadLine();
             Console.WriteLine("Enter Last Name:");
             pr.lastName = Console.ReadLine();
@@ -70,14 +70,14 @@ namespace AddressBookMB
                             switch (selection)
                             {
                                 case "1":
-                                    Console.WriteLine("Enter FirstName");
+                                    Console.WriteLine("Enter First Name");
                                     newData = Console.ReadLine();
                                     record.firstName = newData;
                                     Console.WriteLine("Updated  Records :\n" + record.toString());
 
                                     break;
                                 case "2":
-                                    Console.WriteLine("Enter LastName");
+                                    Console.WriteLine("Enter Last Name");
                                     newData = Console.ReadLine();
                                     record.lastName = newData;
                                     Console.WriteLine("Updated  Records :\n" + record.toString());
