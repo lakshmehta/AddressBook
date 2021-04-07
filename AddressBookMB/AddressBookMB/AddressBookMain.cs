@@ -153,10 +153,15 @@ namespace AddressBookMB
                 {
                     foreach (Contacts record in book)
                     {
-                        if (record.firstName.Equals(nameOfRecordToDelete))
+                        if (record.first_name.Equals(nameOfRecordToDelete))
                         {
                             book.Remove(record);
                             Console.WriteLine("Your Record Deleted :");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Your Record not found!");
                             break;
                         }
 
@@ -170,5 +175,6 @@ namespace AddressBookMB
 
 
         }
+
     }
 }
