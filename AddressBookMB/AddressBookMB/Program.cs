@@ -16,6 +16,11 @@ namespace AddressBookMB
             Console.WriteLine("Enter the first name of the person whose record you want to edit.");
             String recordNameEdit = Console.ReadLine();
             AddressBookMain.editRecord(recordNameEdit, bookEdit);
+            Console.WriteLine("Enter address book you want to delete record from");
+            String bookToDeleteIn = Console.ReadLine();
+            Console.WriteLine("Enter first name of the person whose record you want to delete.");
+            String recordNameToDelete = Console.ReadLine();
+            AddressBookMain.deleteRecord(recordNameToDelete, bookToDeleteIn);
 
         }
     }
